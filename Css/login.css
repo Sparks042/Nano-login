@@ -20,9 +20,6 @@ input:focus{
     text-indent: 14px;
     font-weight: 300;
 }
-select:focus{
-    outline: none;
-} 
 .login-container{
     display: flex;
     justify-content: center;
@@ -57,7 +54,6 @@ h2{
     font-size: 16px;
     color: rgb(107, 102, 102);
     margin: 8px 0 10px -25%;
-
 }
 #password{
     height: 48px;
@@ -105,7 +101,13 @@ a{
     text-decoration: none;
     color: #140138;
 }
-
+#email-error-message{
+    color: red;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 25%;
+    left: 25px;
+}
 
 @media (max-width:600px){
     .login-container{
@@ -154,6 +156,7 @@ a{
         margin-top: 10px;
     }
 }
+
 
 @media (min-width:600px) and (max-width:900px)  {
     .login-container{
